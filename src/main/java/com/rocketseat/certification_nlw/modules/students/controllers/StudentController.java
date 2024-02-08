@@ -20,6 +20,7 @@ public class StudentController {
     @Autowired
     private VerifyIfHasCertificationUseCase VerifyIfHasCertificationUseCase;
     
+    //verifica se o estudante já tem o certificado daquele curso
     @PostMapping("/verifyIfHasCertification")
     public String verifyIfHasCertification(@RequestBody VerifyHasCertificationDTO VerifyHasCertificationDTO){
         System.out.println(VerifyHasCertificationDTO);
